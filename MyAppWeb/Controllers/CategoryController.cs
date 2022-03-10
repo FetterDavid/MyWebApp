@@ -8,16 +8,16 @@ namespace MyAppWeb.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository _db;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryController(ICategoryRepository db)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            return View(_db.GetAll());
+            return View(_unitOfWork.category.GetAll());
         }
 
         //Get
@@ -38,8 +38,8 @@ namespace MyAppWeb.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Add(obj);
-                _db.Save();
+                _unitOfWork.category.Add(obj);
+                _unitOfWork.Save();
 
                 return RedirectToAction("Index");
             }
@@ -51,7 +51,7 @@ namespace MyAppWeb.Controllers
         public IActionResult Edit(int? id)
         {
             if (id == null || id == 0) return NotFound();
-            Category category = _db.GetFirstOrDefault(x => x.Id == id);
+            Category category = _unitOfWork.category.GetFirstOrDefault(x => x.Id == id);
             if (category == null) return NotFound();
 
             return View(category);
@@ -69,8 +69,8 @@ namespace MyAppWeb.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Update(obj);
-                _db.Save();
+                _unitOfWork.category.Update(obj);
+                _unitOfWork.Save();
 
                 return RedirectToAction("Index");
             }
@@ -82,7 +82,7 @@ namespace MyAppWeb.Controllers
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0) return NotFound();
-            Category category = _db.GetFirstOrDefault(x => x.Id == id);
+            Category category = _unitOfWork.category.GetFirstOrDefault(x => x.Id == id);
             if (category == null) return NotFound();
 
             return View(category);
@@ -93,8 +93,8 @@ namespace MyAppWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Delete(Category obj)
         {
-            _db.Remove(obj);
-            _db.Save();
+            _unitOfWork.category.Remove(obj);
+            _unitOfWork.Save();
 
             return RedirectToAction("Index");
         }
