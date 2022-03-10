@@ -1,0 +1,20 @@
+﻿@model CoverType
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post">
+    <div>
+        <h1>Create New Cover Type</h1>
+    </div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <a asp-controller="CoverType" asp-action="Index" class="btn btn-primary">Back To List</a>
+        <button type="submit"  class="btn btn-primary">Create</button>
+    </div>
+</form>
+
