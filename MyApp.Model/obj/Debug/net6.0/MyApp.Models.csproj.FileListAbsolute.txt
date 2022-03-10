@@ -1,0 +1,12 @@
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\bin\Debug\net6.0\MyApp.Models.deps.json
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\bin\Debug\net6.0\MyApp.Models.dll
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\bin\Debug\net6.0\MyApp.Models.pdb
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\MyApp.Models.csproj.AssemblyReference.cache
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\MyApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\MyApp.Models.AssemblyInfoInputs.cache
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\MyApp.Models.AssemblyInfo.cs
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\MyApp.Models.csproj.CoreCompileInputs.cache
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\MyApp.Models.dll
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\refint\MyApp.Models.dll
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\MyApp.Models.pdb
+E:\Projects\ASP.NET\MyAppWeb\MyApp.Model\obj\Debug\net6.0\ref\MyApp.Models.dll
