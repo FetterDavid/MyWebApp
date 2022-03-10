@@ -17,7 +17,7 @@ namespace MyAppWeb.Controllers
 
         public IActionResult Index()
         {
-            return View(_unitOfWork.category.GetAll());
+            return View(_unitOfWork.Category.GetAll());
         }
 
         //Get
@@ -38,7 +38,7 @@ namespace MyAppWeb.Controllers
 
             if (ModelState.IsValid)
             {
-                _unitOfWork.category.Add(obj);
+                _unitOfWork.Category.Add(obj);
                 _unitOfWork.Save();
 
                 return RedirectToAction("Index");
@@ -51,7 +51,7 @@ namespace MyAppWeb.Controllers
         public IActionResult Edit(int? id)
         {
             if (id == null || id == 0) return NotFound();
-            Category category = _unitOfWork.category.GetFirstOrDefault(x => x.Id == id);
+            Category category = _unitOfWork.Category.GetFirstOrDefault(x => x.Id == id);
             if (category == null) return NotFound();
 
             return View(category);
@@ -69,7 +69,7 @@ namespace MyAppWeb.Controllers
 
             if (ModelState.IsValid)
             {
-                _unitOfWork.category.Update(obj);
+                _unitOfWork.Category.Update(obj);
                 _unitOfWork.Save();
 
                 return RedirectToAction("Index");
@@ -82,7 +82,7 @@ namespace MyAppWeb.Controllers
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0) return NotFound();
-            Category category = _unitOfWork.category.GetFirstOrDefault(x => x.Id == id);
+            Category category = _unitOfWork.Category.GetFirstOrDefault(x => x.Id == id);
             if (category == null) return NotFound();
 
             return View(category);
@@ -93,9 +93,8 @@ namespace MyAppWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Delete(Category obj)
         {
-            _unitOfWork.category.Remove(obj);
+            _unitOfWork.Category.Remove(obj);
             _unitOfWork.Save();
-
             return RedirectToAction("Index");
         }
     }

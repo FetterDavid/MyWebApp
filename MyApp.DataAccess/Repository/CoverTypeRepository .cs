@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 
 namespace MyApp.DataAccess.Repository
 {
-    public class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
     {
-        private readonly MyAppDbContext _db;
+        MyAppDbContext _db;
 
-        public CategoryRepository(MyAppDbContext db) : base(db)
+        public CoverTypeRepository(MyAppDbContext db) : base(db)
         {
             _db = db;
         }
-
-        public void Update(Category category)
+        public void Update(CoverType coverType)
         {
-           dbSet.Update(category);
+            dbSet.Update(coverType);
         }
     }
 }
