@@ -3,18 +3,20 @@
     ViewData["Title"] = "Create";
 }
 
-<form method="post">
-    <div>
-        <h1>Create New Cover Type</h1>
-    </div>
-    <div>
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control"/>
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
-    <div>
-        <a asp-controller="CoverType" asp-action="Index" class="btn btn-primary">Back To List</a>
-        <button type="submit"  class="btn btn-primary">Create</button>
-    </div>
-</form>
+<div>
+    <form method="post">
+        <div class="pt-4 pb-4">
+            <a1 class="fs-1 text-primary">Create New Cover Type</a1>
+        </div>
+        <div>
+            <label asp-for="Name" class="fs-4"></label>
+            <input asp-for="Name" class="form-control fs-4" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="pt-3">
+            <a class="btn btn-primary" asp-controller="CoverType" asp-action="Index" >Back to list</a>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>
 

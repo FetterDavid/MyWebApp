@@ -12,6 +12,9 @@ builder.Services.AddDbContext<MyAppDbContext>(options => options.UseSqlServer(
     ));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

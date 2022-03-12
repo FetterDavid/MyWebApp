@@ -3,18 +3,20 @@
     ViewData["Title"] = "Edit";
 }
 
-<form method="post">
-    <div>
-        <h1>Edit Cover Type</h1>
-        <input asp-for="Id" class="form-control" hidden/>
-    </div>
-    <div>
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" disabled/>
-    </div>
-    <div>
-        <a asp-controller="CoverType" asp-action="Index" class="btn btn-primary">Back To List</a>
-        <button type="submit"  class="btn btn-primary">Delete</button>
-    </div>
-</form>
+<div>
+    <form method="post">
+        <div class="pt-4 pb-4">
+            <a1 class="fs-1 text-primary">Delete Cover Type</a1>
+            <label asp-for="Id" hidden></label>
+        </div>
+        <div>
+            <label asp-for="Name" class="fs-4"></label>
+            <input asp-for="Name" class="form-control fs-4" disabled/>
+        </div>
+        <div class="pt-3">
+            <a class="btn btn-primary" asp-controller="CoverType" asp-action="Index" >Back to list</a>
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </div>
+    </form>
+</div>
 
