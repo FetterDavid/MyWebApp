@@ -3,5 +3,28 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Products</h1>
-
+<div class="container">
+    <div class="row p-3">
+        <div class="col-6 pt-4" >
+            <h1>Product List</h1>
+        </div>
+        <div class="col-6 pt-4 text-end">
+            <a class="btn btn-primary" asp-controller="Product" asp-action="Upsert">
+                 <i class="bi bi-plus-circle"></i> &nbsp Create New Product
+            </a>
+        </div>
+    </div>
+    <div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>ISBN</th>
+                    <th>Price</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
