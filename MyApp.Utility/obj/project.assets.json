@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.Utility\\MyApp.Utility.csproj",
+      "projectUniqueName": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Utility\\MyApp.Utility.csproj",
       "projectName": "MyApp.Utility",
-      "projectPath": "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.Utility\\MyApp.Utility.csproj",
+      "projectPath": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Utility\\MyApp.Utility.csproj",
       "packagesPath": "C:\\Users\\Fetter\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.Utility\\obj\\",
+      "outputPath": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

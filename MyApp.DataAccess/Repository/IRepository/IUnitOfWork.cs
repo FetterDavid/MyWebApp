@@ -10,6 +10,7 @@ namespace MyApp.DataAccess.Repository.IRepository
     {
         CategoryRepository Category { get; }
         CoverTypeRepository CoverType { get; }
+        ProductRepository Product { get; }
 
         void Save();
     }

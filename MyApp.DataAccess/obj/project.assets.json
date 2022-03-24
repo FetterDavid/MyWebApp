@@ -1883,11 +1883,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.DataAccess\\MyApp.DataAccess.csproj",
+      "projectUniqueName": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.DataAccess\\MyApp.DataAccess.csproj",
       "projectName": "MyApp.DataAccess",
-      "projectPath": "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.DataAccess\\MyApp.DataAccess.csproj",
+      "projectPath": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.DataAccess\\MyApp.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Fetter\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.DataAccess\\obj\\",
+      "outputPath": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1908,8 +1908,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.Model\\MyApp.Models.csproj": {
-              "projectPath": "E:\\Projects\\ASP.NET\\MyAppWeb\\MyApp.Model\\MyApp.Models.csproj"
+            "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj": {
+              "projectPath": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj"
             }
           }
         }

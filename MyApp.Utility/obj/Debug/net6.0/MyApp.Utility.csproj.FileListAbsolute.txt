@@ -10,3 +10,15 @@ E:\Projects\ASP.NET\MyAppWeb\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.dll
 E:\Projects\ASP.NET\MyAppWeb\MyApp.Utility\obj\Debug\net6.0\refint\MyApp.Utility.dll
 E:\Projects\ASP.NET\MyAppWeb\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.pdb
 E:\Projects\ASP.NET\MyAppWeb\MyApp.Utility\obj\Debug\net6.0\ref\MyApp.Utility.dll
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\bin\Debug\net6.0\MyApp.Utility.deps.json
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\bin\Debug\net6.0\MyApp.Utility.dll
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\bin\Debug\net6.0\MyApp.Utility.pdb
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.csproj.AssemblyReference.cache
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.AssemblyInfoInputs.cache
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.AssemblyInfo.cs
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.dll
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\refint\MyApp.Utility.dll
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\MyApp.Utility.pdb
+C:\Users\Fetter\Desktop\MyWebApp\MyApp.Utility\obj\Debug\net6.0\ref\MyApp.Utility.dll

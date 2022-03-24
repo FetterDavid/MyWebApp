@@ -12,12 +12,14 @@ namespace MyApp.DataAccess.Repository
         private readonly MyAppDbContext _db;
         public CategoryRepository Category { get; private set; }
         public CoverTypeRepository CoverType { get; private set; }
+        public ProductRepository Product { get; private set; }
 
         public UnitOfWork(MyAppDbContext db)
         {
             _db = db;
             Category = new CategoryRepository(_db);
             CoverType = new CoverTypeRepository(_db);
+            Product = new ProductRepository(_db);
         }
 
         public void Save()
