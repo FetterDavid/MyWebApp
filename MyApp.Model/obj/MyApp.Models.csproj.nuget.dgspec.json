@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj": {}
+    "E:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj": {}
   },
   "projects": {
-    "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj": {
+    "E:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj",
+        "projectUniqueName": "E:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj",
         "projectName": "MyApp.Models",
-        "projectPath": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj",
+        "projectPath": "E:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\MyApp.Models.csproj",
         "packagesPath": "C:\\Users\\Fetter\\.nuget\\packages\\",
-        "outputPath": "e:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\obj\\",
+        "outputPath": "E:\\Projects\\ASP.NET\\MyWebApp\\MyApp.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
