@@ -8,8 +8,8 @@ namespace MyAppWeb.Areas.Admin.Controllers
 {
     public class ProductController : Controller
     {
-        IUnitOfWork _unitOfWork;
-        IWebHostEnvironment _hostEnvironment;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
         public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
         {
@@ -83,5 +83,16 @@ namespace MyAppWeb.Areas.Admin.Controllers
 
             return View(obj);
         }
+
+
+    #region API CALLS
+    [HttpGet]
+    public IActionResult GetAll()
+    { 
+        var productList = _unitOfWork.Product.GetAll(includeProperties:"Category,CoverType");
+        return Json(new { data = productList });
+    }
+    #endregion
+
     }
 }
