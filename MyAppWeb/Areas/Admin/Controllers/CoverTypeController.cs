@@ -33,6 +33,7 @@ namespace MyAppWeb.Areas.Admin.Controllers
             { 
                 _unitOfWork.CoverType.Add(obj);
                 _unitOfWork.Save();
+                TempData["success"] = "Cover Type created successfully";
                 return RedirectToAction("Index");
             }
 
@@ -60,6 +61,7 @@ namespace MyAppWeb.Areas.Admin.Controllers
             {
                 _unitOfWork.CoverType.Update(obj);
                 _unitOfWork.Save();
+                TempData["success"] = "Cover Type edited successfully";
                 return RedirectToAction("Index");
             }
 
@@ -85,6 +87,7 @@ namespace MyAppWeb.Areas.Admin.Controllers
         {
             _unitOfWork.CoverType.Remove(obj);
             _unitOfWork.Save();
+            TempData["success"] = "Cover Type deleted successfully";
             return RedirectToAction("Index");
         }
     }

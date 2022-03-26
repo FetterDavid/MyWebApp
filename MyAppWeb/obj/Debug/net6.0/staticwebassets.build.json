@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dtV61tIMhyIDTciJST+3xm7OknYstmJ3jj7jbskP6DM=",
+  "Hash": "++nndPyIrcxEjZjWovVQ//ScTP+cCdBjyarHNGgLzck=",
   "Source": "MyAppWeb",
   "BasePath": "_content/MyAppWeb",
   "Mode": "Default",
@@ -202,23 +202,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\eb466fd7-baf2-44d2-ab0c-1a7b6f09f3a1.jpg"
-    },
-    {
-      "Identity": "E:\\Projects\\ASP.NET\\MyWebApp\\MyAppWeb\\wwwroot\\images\\products\\f9ba603b-2d6d-41d1-b690-922db2fa3201.jpg",
-      "SourceId": "MyAppWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\Projects\\ASP.NET\\MyWebApp\\MyAppWeb\\wwwroot\\",
-      "BasePath": "_content/MyAppWeb",
-      "RelativePath": "images/products/f9ba603b-2d6d-41d1-b690-922db2fa3201.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\f9ba603b-2d6d-41d1-b690-922db2fa3201.jpg"
     },
     {
       "Identity": "E:\\Projects\\ASP.NET\\MyWebApp\\MyAppWeb\\wwwroot\\js\\product.js",
