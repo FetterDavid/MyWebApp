@@ -15,6 +15,21 @@ function loadDataTable() {
             { "data": "price", "width": "15%" },
             { "data": "auther", "width": "15%" },
             { "data": "category.name", "width": "15%" },
+            {
+                "data": "id",
+                "render": function (data) {
+                    return `
+                        <div class="w-75 btn-group" role="group">
+                        <a class="btn btn-primary mx-2" href="/Admin/Product/Upsert?id=${data}">
+                        <i class="bi bi-pencil-square"></i> &nbsp Edit
+                        </a>
+                        <a class="btn btn-danger mx-2">
+                        <i class="bi bi-trash3"></i> &nbsp Delete
+                        </a>
+                        `
+                },
+                "width": "15%"
+            },
         ]
     });
 }

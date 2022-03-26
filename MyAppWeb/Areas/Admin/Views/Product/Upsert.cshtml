@@ -5,6 +5,8 @@
 
 <div class="container">
     <form method="post" asp-action="Upsert" enctype="multipart/form-data">
+        <input asp-for="product.Id" hidden></input>
+        <input asp-for="product.ImageUrl" hidden></input>
         <div class="row">
             <div> 
                 <h1>@(Model.product.Id == 0? "Create" : "Update") Product</h1>

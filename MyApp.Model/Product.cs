@@ -34,10 +34,12 @@ namespace MyApp.Models
         [ValidateNever]
         public string ImageUrl { get; set; }
         [Required]
+        [Display(Name = "Category")]
         public int? CategoryID { get; set; }
         [ValidateNever]
         public Category Category { get; set; }
         [Required]
+        [Display(Name ="Cover Type")]
         public int? CoverTypeID { get; set; }
         [ValidateNever]
         public CoverType CoverType { get; set; }

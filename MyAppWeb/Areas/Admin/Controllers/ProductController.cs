@@ -22,6 +22,7 @@ namespace MyAppWeb.Areas.Admin.Controllers
             return View();
         }
 
+        //Get
         public IActionResult Upsert(int? id)
         {
             ProductVM productVM = new()
@@ -49,12 +50,12 @@ namespace MyAppWeb.Areas.Admin.Controllers
             else
             {
                 //Update
-
+                productVM.product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
+                return View(productVM);
             }
-
-            return View(productVM);
         }
 
+        //Post
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Upsert(ProductVM obj, IFormFile? file)
@@ -69,14 +70,32 @@ namespace MyAppWeb.Areas.Admin.Controllers
                     var uploads = Path.Combine(wwwRoot, @"images\products");
                     var extension = Path.GetExtension(file.FileName);
 
+                    if (obj.product.ImageUrl != null)
+                    {
+                        var oldImagePath = Path.Combine(wwwRoot, obj.product.ImageUrl.TrimStart('\\'));
+
+                        if(System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+
                     using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
                         file.CopyTo(fileStream);
                     }
-                    obj.product.ImageUrl = @"\images\products" + fileName + extension;
+                    obj.product.ImageUrl = @"\images\products\" + fileName + extension;
                 }
 
-                _unitOfWork.Product.Add(obj.product);
+                if (obj.product.Id == 0 )
+                {
+                    _unitOfWork.Product.Add(obj.product);
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(obj.product);
+                }
+
                 _unitOfWork.Save();
                 return Redirect("Index");
            }
